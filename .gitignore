@@ -1,0 +1,16 @@
+# Ignora i dati pesanti
+*.mp4
+*.jpg
+*.png
+*.pkl
+
+# Ignora file di sistema e python cache
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+
+# Ignora output di training/test
+checkpoints/
+outputs/
