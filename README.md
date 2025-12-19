@@ -5,13 +5,15 @@
 [![arXiv-Enigma-360](https://img.shields.io/badge/arXiv-ENIGMA360-red.svg)](https://arxiv.org/abs/2309.14809)
 <!-- end badges -->
 
+## 📌 Project Overview
+
 > [ENIGMA-360](https://iplab.dmi.unict.it/ENIGMA-360/) is a novel multi-view dataset captured in a real industrial laboratory, consisting of 180 egocentric and 180 exocentric videos.
 
 
 <video src="assets/teaser.mp4" controls>
 </video>
 
-## Citing
+## 📝 Citing
 If you use our **ENIGMA-360** dataset for your research, please cite our paper:
 ```
 Cooming soon! 
@@ -29,3 +31,8 @@ Additionally, consider citing the original paper:
 }
 
 ```
+
+
+## 🎓 Acknowledgments
+
+This research is supported by [Next Vision](https://www.nextvisionlab.it/) srl, by MISE - PON I&C 2014-2020 - Progetto ENIGMA  - CUP: B61B19000520008, and by the project FAIR – PNRR MUR Cod. PE0000013 - CUP: E63C22001940006.
