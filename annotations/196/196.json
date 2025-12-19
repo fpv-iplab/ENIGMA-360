@@ -1,0 +1,973 @@
+{
+    "video_name": "196_first_person.mp4",
+    "clips": [
+        {
+            "clip_id": "196_0",
+            "action_time": [
+                0,
+                3.875
+            ],
+            "action_label": {
+                "id_action": "001",
+                "description": "Press the two green buttons on panel A"
+            }
+        },
+        {
+            "clip_id": "196_1",
+            "action_time": [
+                3.877,
+                9.568
+            ],
+            "action_label": {
+                "id_action": "002",
+                "description": "Moves to the workbench and sits down"
+            }
+        },
+        {
+            "clip_id": "196_2",
+            "action_time": [
+                16.766,
+                19.253
+            ],
+            "action_label": {
+                "id_action": "055",
+                "description": "Takes the low-voltage card"
+            }
+        },
+        {
+            "clip_id": "196_3",
+            "action_time": [
+                19.253,
+                20.513
+            ],
+            "action_label": {
+                "id_action": "004",
+                "description": "Places the card on the work area"
+            }
+        },
+        {
+            "clip_id": "196_4",
+            "action_time": [
+                24.172,
+                35.614
+            ],
+            "action_label": {
+                "id_action": "005",
+                "description": "Connects the battery to the screwdriver"
+            }
+        },
+        {
+            "clip_id": "196_5",
+            "action_time": [
+                35.62,
+                54.375
+            ],
+            "action_label": {
+                "id_action": "006",
+                "description": "Removes the workbench screws using the screwdriver"
+            }
+        },
+        {
+            "clip_id": "196_6",
+            "action_time": [
+                60.313,
+                95.511
+            ],
+            "action_label": {
+                "id_action": "007",
+                "description": "Fixes the card to the workbench using the screwdriver"
+            }
+        },
+        {
+            "clip_id": "196_7",
+            "action_time": [
+                109.75,
+                112.047
+            ],
+            "action_label": {
+                "id_action": "008",
+                "description": "Turns on the power supply via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_8",
+            "action_time": [
+                116.141,
+                120.313
+            ],
+            "action_label": {
+                "id_action": "009",
+                "description": "Adjusts the power supply current knob until the green LED turns on"
+            }
+        },
+        {
+            "clip_id": "196_9",
+            "action_time": [
+                120.313,
+                129.125
+            ],
+            "action_label": {
+                "id_action": "010",
+                "description": "Adjusts the power supply voltage knob setting it to 5 Volts"
+            }
+        },
+        {
+            "clip_id": "196_10",
+            "action_time": [
+                133.122,
+                151.172
+            ],
+            "action_label": {
+                "id_action": "011",
+                "description": "Connects the power supply cables to the card's power points"
+            }
+        },
+        {
+            "clip_id": "196_11",
+            "action_time": [
+                165.079,
+                166.791
+            ],
+            "action_label": {
+                "id_action": "012",
+                "description": "Turns off the card's power supply via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_12",
+            "action_time": [
+                166.791,
+                171.141
+            ],
+            "action_label": {
+                "id_action": "013",
+                "description": "Resets the power supply current and voltage knobs to 0"
+            }
+        },
+        {
+            "clip_id": "196_13",
+            "action_time": [
+                173.895,
+                181.438
+            ],
+            "action_label": {
+                "id_action": "014",
+                "description": "Disconnects the power supply cables"
+            }
+        },
+        {
+            "clip_id": "196_14",
+            "action_time": [
+                191.852,
+                212.938
+            ],
+            "action_label": {
+                "id_action": "015",
+                "description": "Removes the card from the workbench using the screwdriver"
+            }
+        },
+        {
+            "clip_id": "196_15",
+            "action_time": [
+                215.297,
+                273.704
+            ],
+            "action_label": {
+                "id_action": "061",
+                "description": "Unscrews the 4 screws on the back of the card using the screwdriver"
+            }
+        },
+        {
+            "clip_id": "196_16",
+            "action_time": [
+                273.701,
+                275.5
+            ],
+            "action_label": {
+                "id_action": "062",
+                "description": "Removes the display from the card"
+            }
+        },
+        {
+            "clip_id": "196_17",
+            "action_time": [
+                333.297,
+                334.813
+            ],
+            "action_label": {
+                "id_action": "016",
+                "description": "Turns on the soldering iron via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_18",
+            "action_time": [
+                334.817,
+                344.86
+            ],
+            "action_label": {
+                "id_action": "017",
+                "description": "Sets the soldering iron temperature to 200 degrees using the yellow UP button"
+            }
+        },
+        {
+            "clip_id": "196_19",
+            "action_time": [
+                358.5,
+                360.719
+            ],
+            "action_label": {
+                "id_action": "019",
+                "description": "Takes the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_20",
+            "action_time": [
+                363.563,
+                365.907
+            ],
+            "action_label": {
+                "id_action": "018",
+                "description": "Grasps the capacitor on the card with pliers"
+            }
+        },
+        {
+            "clip_id": "196_21",
+            "action_time": [
+                371.094,
+                373.838
+            ],
+            "action_label": {
+                "id_action": "019",
+                "description": "Takes the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_22",
+            "action_time": [
+                373.828,
+                376.266
+            ],
+            "action_label": {
+                "id_action": "020",
+                "description": "Touches the first pin of the capacitor with the tip"
+            }
+        },
+        {
+            "clip_id": "196_23",
+            "action_time": [
+                383.532,
+                385.688
+            ],
+            "action_label": {
+                "id_action": "020",
+                "description": "Touches the first pin of the capacitor with the tip"
+            }
+        },
+        {
+            "clip_id": "196_24",
+            "action_time": [
+                390.657,
+                392.875
+            ],
+            "action_label": {
+                "id_action": "018",
+                "description": "Grasps the capacitor on the card with pliers"
+            }
+        },
+        {
+            "clip_id": "196_25",
+            "action_time": [
+                395.224,
+                403.266
+            ],
+            "action_label": {
+                "id_action": "021",
+                "description": "Touches the second pin of the capacitor with the tip"
+            }
+        },
+        {
+            "clip_id": "196_26",
+            "action_time": [
+                404.916,
+                406.186
+            ],
+            "action_label": {
+                "id_action": "022",
+                "description": "Places the pliers on the workbench"
+            }
+        },
+        {
+            "clip_id": "196_27",
+            "action_time": [
+                406.195,
+                408.516
+            ],
+            "action_label": {
+                "id_action": "023",
+                "description": "Places the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_28",
+            "action_time": [
+                415.969,
+                417.188
+            ],
+            "action_label": {
+                "id_action": "024",
+                "description": "Puts the card vertically"
+            }
+        },
+        {
+            "clip_id": "196_29",
+            "action_time": [
+                417.197,
+                421.188
+            ],
+            "action_label": {
+                "id_action": "018",
+                "description": "Grasps the capacitor on the card with pliers"
+            }
+        },
+        {
+            "clip_id": "196_30",
+            "action_time": [
+                426.969,
+                433.085
+            ],
+            "action_label": {
+                "id_action": "019",
+                "description": "Takes the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_31",
+            "action_time": [
+                433.085,
+                435.875
+            ],
+            "action_label": {
+                "id_action": "025",
+                "description": "Touches the first pin of the capacitor on the back of the card with the tip"
+            }
+        },
+        {
+            "clip_id": "196_32",
+            "action_time": [
+                437.985,
+                441.282
+            ],
+            "action_label": {
+                "id_action": "018",
+                "description": "Grasps the capacitor on the card with pliers"
+            }
+        },
+        {
+            "clip_id": "196_33",
+            "action_time": [
+                444.579,
+                450.61
+            ],
+            "action_label": {
+                "id_action": "025",
+                "description": "Touches the first pin of the capacitor on the back of the card with the tip"
+            }
+        },
+        {
+            "clip_id": "196_34",
+            "action_time": [
+                453.094,
+                455.594
+            ],
+            "action_label": {
+                "id_action": "026",
+                "description": "Touches the second pin of the capacitor on the back of the card with the tip"
+            }
+        },
+        {
+            "clip_id": "196_35",
+            "action_time": [
+                459.128,
+                463.844
+            ],
+            "action_label": {
+                "id_action": "026",
+                "description": "Touches the second pin of the capacitor on the back of the card with the tip"
+            }
+        },
+        {
+            "clip_id": "196_36",
+            "action_time": [
+                466.538,
+                468.641
+            ],
+            "action_label": {
+                "id_action": "023",
+                "description": "Places the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_37",
+            "action_time": [
+                468.652,
+                472.094
+            ],
+            "action_label": {
+                "id_action": "004",
+                "description": "Places the card on the work area"
+            }
+        },
+        {
+            "clip_id": "196_38",
+            "action_time": [
+                472.094,
+                473.5
+            ],
+            "action_label": {
+                "id_action": "022",
+                "description": "Places the pliers on the workbench"
+            }
+        },
+        {
+            "clip_id": "196_39",
+            "action_time": [
+                478.75,
+                485.204
+            ],
+            "action_label": {
+                "id_action": "028",
+                "description": "Reduces the soldering iron temperature to minimum (160 degrees) using the yellow DOWN button"
+            }
+        },
+        {
+            "clip_id": "196_40",
+            "action_time": [
+                485.211,
+                488.782
+            ],
+            "action_label": {
+                "id_action": "029",
+                "description": "Turns off the soldering iron via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_41",
+            "action_time": [
+                493.657,
+                527.088
+            ],
+            "action_label": {
+                "id_action": "007",
+                "description": "Fixes the card to the workbench using the screwdriver"
+            }
+        },
+        {
+            "clip_id": "196_42",
+            "action_time": [
+                536.016,
+                537.0
+            ],
+            "action_label": {
+                "id_action": "008",
+                "description": "Turns on the power supply via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_43",
+            "action_time": [
+                549.579,
+                553.032
+            ],
+            "action_label": {
+                "id_action": "009",
+                "description": "Adjusts the power supply current knob until the green LED turns on"
+            }
+        },
+        {
+            "clip_id": "196_44",
+            "action_time": [
+                553.034,
+                566.25
+            ],
+            "action_label": {
+                "id_action": "010",
+                "description": "Adjusts the power supply voltage knob setting it to 5 Volts"
+            }
+        },
+        {
+            "clip_id": "196_45",
+            "action_time": [
+                571.062,
+                592.453
+            ],
+            "action_label": {
+                "id_action": "011",
+                "description": "Connects the power supply cables to the card's power points"
+            }
+        },
+        {
+            "clip_id": "196_46",
+            "action_time": [
+                600.594,
+                604.391
+            ],
+            "action_label": {
+                "id_action": "030",
+                "description": "Turns on the oscilloscope via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_47",
+            "action_time": [
+                604.391,
+                605.563
+            ],
+            "action_label": {
+                "id_action": "031",
+                "description": "Activates the probe channel number 2 using the blue-bordered CH2 MENU button"
+            }
+        },
+        {
+            "clip_id": "196_48",
+            "action_time": [
+                638.047,
+                644.444
+            ],
+            "action_label": {
+                "id_action": "032",
+                "description": "Connects the probe ground clip to test point number 1"
+            }
+        },
+        {
+            "clip_id": "196_49",
+            "action_time": [
+                649.766,
+                656.172
+            ],
+            "action_label": {
+                "id_action": "033",
+                "description": "Uses the probe tip to check some signal brought to test point number 2 on the card"
+            }
+        },
+        {
+            "clip_id": "196_50",
+            "action_time": [
+                656.172,
+                658.407
+            ],
+            "action_label": {
+                "id_action": "034",
+                "description": "Presses the oscilloscope's Auto Set button"
+            }
+        },
+        {
+            "clip_id": "196_51",
+            "action_time": [
+                670.704,
+                673.641
+            ],
+            "action_label": {
+                "id_action": "036",
+                "description": "Uses the probe tip at test point number 3 on the card"
+            }
+        },
+        {
+            "clip_id": "196_52",
+            "action_time": [
+                673.641,
+                674.797
+            ],
+            "action_label": {
+                "id_action": "034",
+                "description": "Presses the oscilloscope's Auto Set button"
+            }
+        },
+        {
+            "clip_id": "196_53",
+            "action_time": [
+                684.594,
+                686.688
+            ],
+            "action_label": {
+                "id_action": "037",
+                "description": "Uses the probe tip at test point number 4 on the card"
+            }
+        },
+        {
+            "clip_id": "196_54",
+            "action_time": [
+                686.692,
+                688.579
+            ],
+            "action_label": {
+                "id_action": "034",
+                "description": "Presses the oscilloscope's Auto Set button"
+            }
+        },
+        {
+            "clip_id": "196_55",
+            "action_time": [
+                703.907,
+                705.204
+            ],
+            "action_label": {
+                "id_action": "034",
+                "description": "Presses the oscilloscope's Auto Set button"
+            }
+        },
+        {
+            "clip_id": "196_56",
+            "action_time": [
+                716.204,
+                717.296
+            ],
+            "action_label": {
+                "id_action": "043",
+                "description": "Uses the probe tip at test point number 6 on the card"
+            }
+        },
+        {
+            "clip_id": "196_57",
+            "action_time": [
+                717.3,
+                719.719
+            ],
+            "action_label": {
+                "id_action": "034",
+                "description": "Presses the oscilloscope's Auto Set button"
+            }
+        },
+        {
+            "clip_id": "196_58",
+            "action_time": [
+                731.829,
+                735.329
+            ],
+            "action_label": {
+                "id_action": "039",
+                "description": "Uses the probe tip at test point number 7 on the card"
+            }
+        },
+        {
+            "clip_id": "196_59",
+            "action_time": [
+                735.336,
+                738.075
+            ],
+            "action_label": {
+                "id_action": "034",
+                "description": "Presses the oscilloscope's Auto Set button"
+            }
+        },
+        {
+            "clip_id": "196_60",
+            "action_time": [
+                749.594,
+                751.438
+            ],
+            "action_label": {
+                "id_action": "012",
+                "description": "Turns off the card's power supply via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_61",
+            "action_time": [
+                751.438,
+                756.391
+            ],
+            "action_label": {
+                "id_action": "013",
+                "description": "Resets the power supply current and voltage knobs to 0"
+            }
+        },
+        {
+            "clip_id": "196_62",
+            "action_time": [
+                756.391,
+                760.954
+            ],
+            "action_label": {
+                "id_action": "040",
+                "description": "Disconnects the ground clip and oscilloscope probe"
+            }
+        },
+        {
+            "clip_id": "196_63",
+            "action_time": [
+                760.953,
+                766.157
+            ],
+            "action_label": {
+                "id_action": "014",
+                "description": "Disconnects the power supply cables"
+            }
+        },
+        {
+            "clip_id": "196_64",
+            "action_time": [
+                771.735,
+                773.625
+            ],
+            "action_label": {
+                "id_action": "041",
+                "description": "Deactivates the probe channel number 2"
+            }
+        },
+        {
+            "clip_id": "196_65",
+            "action_time": [
+                773.635,
+                777.407
+            ],
+            "action_label": {
+                "id_action": "042",
+                "description": "Turns off the oscilloscope via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_66",
+            "action_time": [
+                781.204,
+                802.975
+            ],
+            "action_label": {
+                "id_action": "015",
+                "description": "Removes the card from the workbench using the screwdriver"
+            }
+        },
+        {
+            "clip_id": "196_67",
+            "action_time": [
+                814.235,
+                815.284
+            ],
+            "action_label": {
+                "id_action": "016",
+                "description": "Turns on the soldering iron via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_68",
+            "action_time": [
+                815.284,
+                827.094
+            ],
+            "action_label": {
+                "id_action": "017",
+                "description": "Sets the soldering iron temperature to 200 degrees using the yellow UP button"
+            }
+        },
+        {
+            "clip_id": "196_69",
+            "action_time": [
+                833.266,
+                836.908
+            ],
+            "action_label": {
+                "id_action": "018",
+                "description": "Grasps the capacitor on the card with pliers"
+            }
+        },
+        {
+            "clip_id": "196_70",
+            "action_time": [
+                840.11,
+                841.672
+            ],
+            "action_label": {
+                "id_action": "018",
+                "description": "Grasps the capacitor on the card with pliers"
+            }
+        },
+        {
+            "clip_id": "196_71",
+            "action_time": [
+                844.844,
+                851.735
+            ],
+            "action_label": {
+                "id_action": "018",
+                "description": "Grasps the capacitor on the card with pliers"
+            }
+        },
+        {
+            "clip_id": "196_72",
+            "action_time": [
+                851.735,
+                854.199
+            ],
+            "action_label": {
+                "id_action": "019",
+                "description": "Takes the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_73",
+            "action_time": [
+                854.186,
+                855.969
+            ],
+            "action_label": {
+                "id_action": "020",
+                "description": "Touches the first pin of the capacitor with the tip"
+            }
+        },
+        {
+            "clip_id": "196_74",
+            "action_time": [
+                860.92,
+                863.797
+            ],
+            "action_label": {
+                "id_action": "021",
+                "description": "Touches the second pin of the capacitor with the tip"
+            }
+        },
+        {
+            "clip_id": "196_75",
+            "action_time": [
+                867.315,
+                870.922
+            ],
+            "action_label": {
+                "id_action": "022",
+                "description": "Places the pliers on the workbench"
+            }
+        },
+        {
+            "clip_id": "196_76",
+            "action_time": [
+                869.661,
+                871.454
+            ],
+            "action_label": {
+                "id_action": "023",
+                "description": "Places the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_77",
+            "action_time": [
+                874.672,
+                877.969
+            ],
+            "action_label": {
+                "id_action": "024",
+                "description": "Puts the card vertically"
+            }
+        },
+        {
+            "clip_id": "196_78",
+            "action_time": [
+                877.969,
+                888.704
+            ],
+            "action_label": {
+                "id_action": "018",
+                "description": "Grasps the capacitor on the card with pliers"
+            }
+        },
+        {
+            "clip_id": "196_79",
+            "action_time": [
+                891.99,
+                893.422
+            ],
+            "action_label": {
+                "id_action": "019",
+                "description": "Takes the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_80",
+            "action_time": [
+                893.421,
+                900.61
+            ],
+            "action_label": {
+                "id_action": "025",
+                "description": "Touches the first pin of the capacitor on the back of the card with the tip"
+            }
+        },
+        {
+            "clip_id": "196_81",
+            "action_time": [
+                902.997,
+                908.573
+            ],
+            "action_label": {
+                "id_action": "026",
+                "description": "Touches the second pin of the capacitor on the back of the card with the tip"
+            }
+        },
+        {
+            "clip_id": "196_82",
+            "action_time": [
+                910.922,
+                912.141
+            ],
+            "action_label": {
+                "id_action": "023",
+                "description": "Places the soldering iron tip"
+            }
+        },
+        {
+            "clip_id": "196_83",
+            "action_time": [
+                912.143,
+                916.61
+            ],
+            "action_label": {
+                "id_action": "004",
+                "description": "Places the card on the work area"
+            }
+        },
+        {
+            "clip_id": "196_84",
+            "action_time": [
+                916.611,
+                918.619
+            ],
+            "action_label": {
+                "id_action": "022",
+                "description": "Places the pliers on the workbench"
+            }
+        },
+        {
+            "clip_id": "196_85",
+            "action_time": [
+                930.188,
+                935.344
+            ],
+            "action_label": {
+                "id_action": "028",
+                "description": "Reduces the soldering iron temperature to minimum (160 degrees) using the yellow DOWN button"
+            }
+        },
+        {
+            "clip_id": "196_86",
+            "action_time": [
+                935.352,
+                939.141
+            ],
+            "action_label": {
+                "id_action": "029",
+                "description": "Turns off the soldering iron via the tower switch"
+            }
+        },
+        {
+            "clip_id": "196_87",
+            "action_time": [
+                948.516,
+                1069.625
+            ],
+            "action_label": {
+                "id_action": "063",
+                "description": "Connects the display to the card using the screwdriver"
+            }
+        }
+    ]
+}
