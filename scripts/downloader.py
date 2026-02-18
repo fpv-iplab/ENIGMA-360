@@ -7,7 +7,6 @@ from io import BytesIO
 
 # --- Configuration ---
 BASE_URL = "https://iplab.dmi.unict.it/ENIGMA-360/data"
-SPLIT_REPO_URL = "https://raw.githubusercontent.com/user/repo/main/splits"
 
 def download_file(url, dest_path):
     """Downloads a file to the specified path."""
@@ -43,7 +42,7 @@ def main():
         # 1. Fetch split file from GitHub (Mock logic)
         # split_url = f"{SPLIT_REPO_URL}/{split}.txt"
         with open(f"annotations/{split}.txt", 'r') as splitf:
-            ids = splitf.readlines()
+            ids = [x.strip() for x in splitf.readlines()]
         
         for vid in ids:
             views_to_download = ["ego", "exo"] if args.view == "both" else [args.view]
