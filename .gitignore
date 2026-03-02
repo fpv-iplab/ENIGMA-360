@@ -15,3 +15,5 @@ __pycache__/
 utils/
 checkpoints/
 outputs/
+data/masks/
+data/masks/*

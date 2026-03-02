@@ -28,7 +28,7 @@ def main():
     # Flags
     parser.add_argument("--splits", nargs="+", choices=["train", "test", "val"], default=["train"],
                         help="Select splits to download (e.g., --splits train val)")
-    parser.add_argument("--mode", choices=["videos", "frames"], required=True,
+    parser.add_argument("--mode", choices=["videos", "frames", "masks"], required=True,
                         help="Download raw videos or extracted frames")
     parser.add_argument("--view", choices=["ego", "exo", "both"], default="both",
                         help="Camera perspective")
@@ -52,6 +52,11 @@ def main():
                     suffix = "first_person" if view == "ego" else "third_person"
                     url = f"{BASE_URL}/videos/{vid}/{vid}_{suffix}.mp4"
                     dest = os.path.join(output_dir, args.mode, vid, f"{vid}_{suffix}.mp4")
+                    download_file(url, dest)
+                
+                elif args.mode == "masks":
+                    url = f"{BASE_URL}/masks/{vid}.json"
+                    dest = os.path.join(output_dir, args.mode, f"{vid}.json")
                     download_file(url, dest)
                 
                 else: # Frames mode
