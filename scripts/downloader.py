@@ -36,7 +36,7 @@ def main():
     )
     parser.add_argument(
         "--mode",
-        choices=["videos", "frames", "masks", "features"],
+        choices=["videos", "frames", "masks", "features", "hoi"],
         required=True,
         help="Download raw videos or extracted frames",
     )
@@ -48,8 +48,8 @@ def main():
     )
 
     args = parser.parse_args()
-    
-    if args.mode in ["videos", "frames", "masks"]:
+
+    if args.mode in ["videos", "frames", "masks", "hoi"]:
         output_dir = "data"
     elif args.mode == "features":
         output_dir = "features"
@@ -75,19 +75,22 @@ def main():
                     download_file(url, dest)
 
                 elif args.mode == "masks":
-                    url = f"{BASE_URL}/data/{args.mode}/{vid}.json"
-                    dest = os.path.join(output_dir, args.mode, f"{vid}.json")
-                    download_file(url, dest)
+                    if view == "ego":
+                        url = f"{BASE_URL}/data/{args.mode}/{vid}.json"
+                        dest = os.path.join(output_dir, args.mode, f"{vid}.json")
+                        download_file(url, dest)
 
                 elif args.mode == "features":
-                    current_view = [view] if view != "both" else ["ego", "exo"]  # Default to ego for features
+                    current_view = (
+                        [view] if view != "both" else ["ego", "exo"]
+                    )  # Default to ego for features
                     for v in current_view:
                         url = f"{BASE_URL}/features/dinov2/{v}/{vid}.npy"
                         print(f"Downloading features for {url}")
                         dest = os.path.join(output_dir, f"{v}_{vid}.npy")
                         download_file(url, dest)
-
-                else:  # Frames mode
+                        
+                elif args.mode == "frames":  # Frames mode
                     # This assumes a naming convention for frames (e.g., 001.jpg)
                     # Realistically, you'd loop through a frame index or list
                     counter = 1
@@ -105,6 +108,14 @@ def main():
                             counter += 1
                         except:
                             break
+    if args.mode == "hoi":
+        url = f"{BASE_URL}/data/frames_hoi.tar.gz"
+        dest = os.path.join(output_dir, "frames_hoi.tar.gz")
+        download_file(url, dest)
+
+        # Extract the tar.gz file
+        with tarfile.open(dest, "r:gz") as tar:
+            tar.extractall(path=os.path.join(output_dir, "frames_hoi"))
 
 
 if __name__ == "__main__":
