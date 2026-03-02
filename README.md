@@ -13,7 +13,7 @@
 <video src="assets/teaser.mp4" controls>
 </video>
 
-## ⬇️ Downloading the Dataset
+## Downloading the Dataset
 
 We provide a Python downloader script to easily fetch the dataset components you need. 
 
@@ -42,23 +42,27 @@ python downloader.py --mode <MODE> [--splits <SPLIT1> <SPLIT2>] [--view <VIEW>]
 
 ```bash
 python downloader.py --mode videos --splits train val --view both
-
 ```
 
 **2. Download DINOv2 features for the test split (egocentric view only):**
 
 ```bash
 python downloader.py --mode features --splits test --view ego
-
 ```
 
 **3. Download HOI (Human-Object Interaction) frames:**
 
 ```bash
 python downloader.py --mode hoi
-
 ```
 
+## Tasks
+
+### Egocentric Human-Object Interaction detection
+
+The annotations for this task are located in the `annotations/hoi` directory. The format follows the standard of HOS introduced in the [VISOR-HOS GitHub repository](https://github.com/epic-kitchens/VISOR-HOS?tab=readme-ov-file). Please refer to that link for more information on how the annotations are structured.
+
+> To use these annotations, you must first download the corresponding frames using the downloader script provided below with the `--mode hoi` flag.
 
 ## 📝 Citing
 If you use our **ENIGMA-360** dataset for your research, please cite our paper:
