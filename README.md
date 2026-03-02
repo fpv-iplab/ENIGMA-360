@@ -13,6 +13,53 @@
 <video src="assets/teaser.mp4" controls>
 </video>
 
+## ⬇️ Downloading the Dataset
+
+We provide a Python downloader script to easily fetch the dataset components you need. 
+
+*Note: The script requires the presence of an `annotations/` folder containing the split files (`train.txt`, `val.txt`, `test.txt`) with the video IDs to download.*
+
+### Usage
+
+Run the script specifying the desired mode, splits, and camera views:
+
+```bash
+python downloader.py --mode <MODE> [--splits <SPLIT1> <SPLIT2>] [--view <VIEW>]
+```
+
+### Arguments
+
+| Argument | Description | Choices | Default |
+| --- | --- | --- | --- |
+| `--mode` | **(Required)** The type of data to download. | `videos`, `frames`, `masks`, `features`, `hoi` | - |
+| `--splits` | The dataset splits to download. | `train`, `val`, `test` | `train` |
+| `--view` | The camera perspective. | `ego`, `exo`, `both` | `both` |
+
+
+### Examples
+
+**1. Download raw videos for both train and validation splits (both views):**
+
+```bash
+python downloader.py --mode videos --splits train val --view both
+
+```
+
+**2. Download DINOv2 features for the test split (egocentric view only):**
+
+```bash
+python downloader.py --mode features --splits test --view ego
+
+```
+
+**3. Download HOI (Human-Object Interaction) frames:**
+
+```bash
+python downloader.py --mode hoi
+
+```
+
+
 ## 📝 Citing
 If you use our **ENIGMA-360** dataset for your research, please cite our paper:
 ```
