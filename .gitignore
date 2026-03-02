@@ -17,3 +17,5 @@ checkpoints/
 outputs/
 data/masks/
 data/masks/*
+features/dinov2/
+features/dinov2/*

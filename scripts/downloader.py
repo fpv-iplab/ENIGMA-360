@@ -6,7 +6,8 @@ import tarfile
 from io import BytesIO
 
 # --- Configuration ---
-BASE_URL = "https://iplab.dmi.unict.it/ENIGMA-360/data"
+BASE_URL = "https://iplab.dmi.unict.it/ENIGMA-360"
+
 
 def download_file(url, dest_path):
     """Downloads a file to the specified path."""
@@ -14,7 +15,7 @@ def download_file(url, dest_path):
     response = requests.get(url, stream=True)
     if response.status_code == 200:
         os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-        with open(dest_path, 'wb') as f:
+        with open(dest_path, "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):
                 f.write(chunk)
     else:
@@ -24,49 +25,82 @@ def download_file(url, dest_path):
 
 def main():
     parser = argparse.ArgumentParser(description="Dataset Downloader")
-    
+
     # Flags
-    parser.add_argument("--splits", nargs="+", choices=["train", "test", "val"], default=["train"],
-                        help="Select splits to download (e.g., --splits train val)")
-    parser.add_argument("--mode", choices=["videos", "frames", "masks"], required=True,
-                        help="Download raw videos or extracted frames")
-    parser.add_argument("--view", choices=["ego", "exo", "both"], default="both",
-                        help="Camera perspective")
-    
+    parser.add_argument(
+        "--splits",
+        nargs="+",
+        choices=["train", "test", "val"],
+        default=["train"],
+        help="Select splits to download (e.g., --splits train val)",
+    )
+    parser.add_argument(
+        "--mode",
+        choices=["videos", "frames", "masks", "features"],
+        required=True,
+        help="Download raw videos or extracted frames",
+    )
+    parser.add_argument(
+        "--view",
+        choices=["ego", "exo", "both"],
+        default="both",
+        help="Camera perspective",
+    )
+
     args = parser.parse_args()
-    output_dir = "data"
+    
+    if args.mode in ["videos", "frames", "masks"]:
+        output_dir = "data"
+    elif args.mode == "features":
+        output_dir = "features"
 
     ids = []
     for split in args.splits:
         print(f"--- Processing {split} split ---")
         # 1. Fetch split file from GitHub (Mock logic)
         # split_url = f"{SPLIT_REPO_URL}/{split}.txt"
-        with open(f"annotations/{split}.txt", 'r') as splitf:
+        with open(f"annotations/{split}.txt", "r") as splitf:
             ids = [x.strip() for x in splitf.readlines()]
-        
+
         for vid in ids:
             views_to_download = ["ego", "exo"] if args.view == "both" else [args.view]
-            
+
             for view in views_to_download:
                 if args.mode == "videos":
                     suffix = "first_person" if view == "ego" else "third_person"
-                    url = f"{BASE_URL}/videos/{vid}/{vid}_{suffix}.mp4"
-                    dest = os.path.join(output_dir, args.mode, vid, f"{vid}_{suffix}.mp4")
+                    url = f"{BASE_URL}/data/{args.mode}/{vid}/{vid}_{suffix}.mp4"
+                    dest = os.path.join(
+                        output_dir, args.mode, vid, f"{vid}_{suffix}.mp4"
+                    )
                     download_file(url, dest)
-                
+
                 elif args.mode == "masks":
-                    url = f"{BASE_URL}/masks/{vid}.json"
+                    url = f"{BASE_URL}/data/{args.mode}/{vid}.json"
                     dest = os.path.join(output_dir, args.mode, f"{vid}.json")
                     download_file(url, dest)
-                
-                else: # Frames mode
+
+                elif args.mode == "features":
+                    current_view = [view] if view != "both" else ["ego", "exo"]  # Default to ego for features
+                    for v in current_view:
+                        url = f"{BASE_URL}/features/dinov2/{v}/{vid}.npy"
+                        print(f"Downloading features for {url}")
+                        dest = os.path.join(output_dir, f"{v}_{vid}.npy")
+                        download_file(url, dest)
+
+                else:  # Frames mode
                     # This assumes a naming convention for frames (e.g., 001.jpg)
                     # Realistically, you'd loop through a frame index or list
                     counter = 1
                     while True:
                         try:
-                            frame_url = f"{BASE_URL}/frames/{view}/{vid}/{vid}_{counter:010d}.jpg"
-                            dest = os.path.join(output_dir, args.mode, view, vid, f"{vid}_{counter:010d}.jpg")
+                            frame_url = f"{BASE_URL}/data/{args.mode}/{view}/{vid}/{vid}_{counter:010d}.jpg"
+                            dest = os.path.join(
+                                output_dir,
+                                args.mode,
+                                view,
+                                vid,
+                                f"{vid}_{counter:010d}.jpg",
+                            )
                             download_file(frame_url, dest)
                             counter += 1
                         except:
