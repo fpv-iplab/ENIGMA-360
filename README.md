@@ -9,9 +9,11 @@
 
 > [ENIGMA-360](https://iplab.dmi.unict.it/ENIGMA-360/) is a novel multi-view dataset captured in a real industrial laboratory, consisting of 180 egocentric and 180 exocentric videos.
 
+![ENIGMA-360 Demo](assets/enigma.gif)
 
-<video src="assets/teaser.mp4" controls>
-</video>
+## Abstract
+
+ENIGMA-360 is a new multi-view dataset acquired in a real industrial scenario. The dataset is composed of 180 egocentric and 180 exocentric procedural videos temporally synchronized, offering complementary information of the same scene. The 360 videos have been labeled with temporal and spatial annotations, enabling the study of different aspects of human behavior in the industrial domain. We provide baseline experiments for 3 tasks: Temporal Action Segmentation, Keystep Recognition, Egocentric Human-Object Interaction Detection. The dataset and its annotations are publicly available.
 
 ## Downloading the Dataset
 
@@ -55,14 +57,6 @@ python downloader.py --mode features --splits test --view ego
 ```bash
 python downloader.py --mode hoi
 ```
-
-## Tasks
-
-### Egocentric Human-Object Interaction detection
-
-The annotations for this task are located in the `annotations/hoi` directory. The format follows the standard of HOS introduced in the [VISOR-HOS GitHub repository](https://github.com/epic-kitchens/VISOR-HOS?tab=readme-ov-file). Please refer to that link for more information on how the annotations are structured.
-
-> To use these annotations, you must first download the corresponding frames using the downloader script provided below with the `--mode hoi` flag.
 
 ## 📝 Citing
 If you use our **ENIGMA-360** dataset for your research, please cite our paper:
