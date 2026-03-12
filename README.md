@@ -2,7 +2,7 @@
 
 <!-- start badges -->
 [![arXiv-Enigma-51](https://img.shields.io/badge/arXiv-ENIGMA51-red.svg)](https://arxiv.org/abs/2309.14809)
-[![arXiv-Enigma-360](https://img.shields.io/badge/arXiv-ENIGMA360-red.svg)](https://arxiv.org/abs/2309.14809)
+[![arXiv-Enigma-360](https://img.shields.io/badge/arXiv-ENIGMA360-red.svg)](https://arxiv.org/abs/2603.09741)
 <!-- end badges -->
 
 ## 📌 Project Overview
