@@ -61,7 +61,12 @@ python downloader.py --mode hoi
 ## 📝 Citing
 If you use our **ENIGMA-360** dataset for your research, please cite our paper:
 ```
-Cooming soon! 
+@article{ragusa2026enigma,
+  title={ENIGMA-360: An Ego-Exo Dataset for Human Behavior Understanding in Industrial Scenarios},
+  author={Ragusa, Francesco and Leonardi, Rosario and Mazzamuto, Michele and Di Mauro, Daniele and Quattrocchi, Camillo and Passanisi, Alessandro and D'Ambra, Irene and Furnari, Antonino and Farinella, Giovanni Maria},
+  journal={arXiv preprint arXiv:2603.09741},
+  year={2026}
+}
 ```
 
 Additionally, consider citing the original paper:
