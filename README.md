@@ -7,7 +7,7 @@
 
 ## 📌 Project Overview
 
-> [ENIGMA-360](https://iplab.dmi.unict.it/ENIGMA-360/) is a novel multi-view dataset captured in a real industrial laboratory, consisting of 180 egocentric and 180 exocentric videos.
+> [ENIGMA-360](https://fpv-iplab.github.io/ENIGMA-360/) is a novel multi-view dataset captured in a real industrial laboratory, consisting of 180 egocentric and 180 exocentric videos.
 
 ![ENIGMA-360 Demo](assets/enigma.gif)
 
