@@ -6,7 +6,7 @@ import tarfile
 from io import BytesIO
 
 # --- Configuration ---
-BASE_URL = "https://iplab.dmi.unict.it/ENIGMA-360"
+BASE_URL = "https://iplab.dmi.unict.it/sharing/ENIGMA-360"
 
 
 def download_file(url, dest_path):
