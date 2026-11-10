@@ -12,8 +12,7 @@
 ![ENIGMA-360 Demo](assets/enigma.gif)
 
 ## Abstract
-
-ENIGMA-360 is a new multi-view dataset acquired in a real industrial scenario. The dataset is composed of 180 egocentric and 180 exocentric procedural videos temporally synchronized, offering complementary information of the same scene. The 360 videos have been labeled with temporal and spatial annotations, enabling the study of different aspects of human behavior in the industrial domain. We provide baseline experiments for 3 tasks: Temporal Action Segmentation, Keystep Recognition, Egocentric Human-Object Interaction Detection. The dataset and its annotations are publicly available.
+ENIGMA-360 is a new ego-exo dataset acquired in a real industrial scenario. The dataset is composed of 180 egocentric and 180 exocentric procedural videos temporally synchronized offering complementary information of the same scene. The 360 videos have been labeled with temporal and spatial annotations, enabling the study of different aspects of human behavior in industrial domain. We provide baseline experiments for 4 foundational tasks for human behavior understanding: 1) Temporal Action Segmentation, 2) Keystep Recognition, 3) Egocentric Human-Object Interaction Detection, and 4) Video-Grounded Cross-View VQA, showing the limits of state-of-the-art approaches on this challenging scenario. These results highlight the need for new models capable of robust ego-exo understanding in real‑world environments. The dataset and its annotations are publicly available.
 
 ## Downloading the Dataset
 
