@@ -7,7 +7,7 @@
 
 ## 📌 Project Overview
 
-> [ENIGMA-360](https://fpv-iplab.github.io/ENIGMA-360/) is a novel multi-view dataset captured in a real industrial laboratory, consisting of 180 egocentric and 180 exocentric videos.
+> [ENIGMA-360](https://fpv-iplab.github.io/ENIGMA-360/) is a novel ego-exo dataset captured in a real industrial laboratory, consisting of 180 egocentric and 180 exocentric videos.
 
 ![ENIGMA-360 Demo](assets/enigma.gif)
 
@@ -63,7 +63,7 @@ If you use our **ENIGMA-360** dataset for your research, please cite our paper:
 @article{ragusa2026enigma,
   title={ENIGMA-360: An Ego-Exo Dataset for Human Behavior Understanding in Industrial Scenarios},
   author={Ragusa, Francesco and Leonardi, Rosario and Mazzamuto, Michele and Di Mauro, Daniele and Quattrocchi, Camillo and Passanisi, Alessandro and D'Ambra, Irene and Furnari, Antonino and Farinella, Giovanni Maria},
-  journal={arXiv preprint arXiv:2603.09741},
+  journal={International Journal of Computer Vision (IJCV)},
   year={2026}
 }
 ```
