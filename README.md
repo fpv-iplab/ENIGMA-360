@@ -1,4 +1,4 @@
-# ENIGMA-360: A Multi-view Dataset for Human Behavior Understanding in Industrial Scenarios
+# ENIGMA-360: an Ego-Exo Dataset for Human Behavior Understanding in Industrial Scenarios
 
 <!-- start badges -->
 [![arXiv-Enigma-51](https://img.shields.io/badge/arXiv-ENIGMA51-red.svg)](https://arxiv.org/abs/2309.14809)
